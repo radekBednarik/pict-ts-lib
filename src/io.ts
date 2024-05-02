@@ -29,12 +29,29 @@ async function _saveFile(data: string, filepath: string): Promise<void> {
   }
 }
 
+export async function readText(filepath: string): Promise<string> {
+  try {
+    return await _readFile(filepath);
+  } catch (error) {
+    throw new Error(
+      `func readText failed to read content of the file from: ${filepath}`,
+    );
+  }
+}
+
+export async function writeText(data: string, filepath: string): Promise<void> {
+  try {
+    await _saveFile(data, filepath);
+  } catch (error) {
+    throw new Error(
+      `func writeText failed to save text content with error: ${error}`,
+    );
+  }
+}
+
 export async function readJson(filepath: string): Promise<any> {
   try {
-    const fp = z.string().parse(filepath);
-    const ffp = resolve(process.cwd(), fp);
-
-    const data = await _readFile(ffp);
+    const data = await _readFile(filepath);
 
     return JSON.parse(data);
   } catch (error) {
@@ -46,11 +63,9 @@ export async function readJson(filepath: string): Promise<any> {
 
 export async function writeJson(data: any, filepath: string): Promise<void> {
   try {
-    const fp = z.string().parse(filepath);
-    const ffp = resolve(process.cwd(), fp);
-    const d = z.string().parse(JSON.stringify(data));
+    const d = z.string().parse(data);
 
-    await _saveFile(d, ffp);
+    await _saveFile(d, filepath);
   } catch (error) {
     throw new Error(
       `func writeJson failed to save JSON data as string with error: ${error}`,

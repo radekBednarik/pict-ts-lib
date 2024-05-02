@@ -1,0 +1,1640 @@
+[
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "512"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "100"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "4096"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "10"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "8192"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Logical"
+    },
+    {
+      "key": "Size",
+      "value": "1000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "1024"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "65536"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Stripe"
+    },
+    {
+      "key": "Size",
+      "value": "10000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Mirror"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "RAID-5"
+    },
+    {
+      "key": "Size",
+      "value": "40000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "32768"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Span"
+    },
+    {
+      "key": "Size",
+      "value": "500"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "2048"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Primary"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "slow"
+    },
+    {
+      "key": "File system",
+      "value": "NTFS"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "off"
+    }
+  ],
+  [
+    {
+      "key": "Type",
+      "value": "Single"
+    },
+    {
+      "key": "Size",
+      "value": "5000"
+    },
+    {
+      "key": "Format method",
+      "value": "quick"
+    },
+    {
+      "key": "File system",
+      "value": "FAT32"
+    },
+    {
+      "key": "Cluster size",
+      "value": "16384"
+    },
+    {
+      "key": "Compression",
+      "value": "on"
+    }
+  ]
+]
