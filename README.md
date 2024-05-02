@@ -14,7 +14,7 @@ to download npm packages with binaries inside.
 
 ## Installation
 
-- just clone this repo, switch into it and run `npm install`
+- run `npm install pwtg`
 
 ## Usage
 

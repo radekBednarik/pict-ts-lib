@@ -1,8 +1,9 @@
-import PictGenerator from "../../dist/pict.js";
+// import PictGenerator from "../../dist/pict.js";
 import { expect } from "chai";
 import { describe, beforeEach, it } from "mocha";
 import { existsSync } from "fs";
 import { rimraf } from "rimraf";
+import PictGenerator from "pwtg";
 
 async function deleteOutputs(outputs) {
   await rimraf(outputs);
