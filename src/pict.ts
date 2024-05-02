@@ -11,12 +11,15 @@ export default class PictGenerator {
   private filepathModel: string;
   private pictLocation: string;
 
+  public generated?: string;
+
   constructor(filepathModel: string, pictBinaryLocation: string) {
     this.filepathModel = resolve(process.cwd(), sParser.parse(filepathModel));
     this.pictLocation = resolve(
       process.cwd(),
       sParser.parse(pictBinaryLocation),
     );
+    this.generated = undefined;
   }
 
   public async generate(
@@ -24,31 +27,28 @@ export default class PictGenerator {
     save?: boolean,
     saveLocation?: string,
   ) {
-    const sLoc = resolve(process.cwd(), sParser.parse(saveLocation));
-    let generated: string = "";
-
     if (output == "json") {
       const { stdout } = await exFile(this.pictLocation, [
         this.filepathModel,
         "-f:json",
       ]);
-      generated = sParser.parse(stdout);
+      this.generated = sParser.parse(stdout);
     } else {
       const { stdout } = await exFile(this.pictLocation, [
         this.filepathModel,
         "-f:text",
       ]);
-      generated = sParser.parse(stdout);
+      this.generated = sParser.parse(stdout);
     }
 
     if (save == true && typeof saveLocation === "string") {
+      const sLoc = resolve(process.cwd(), sParser.parse(saveLocation));
+
       if (output == "json") {
-        await writeJson(generated, sLoc);
+        await writeJson(this.generated, sLoc);
       } else {
-        await writeText(generated, sLoc);
+        await writeText(this.generated, sLoc);
       }
-    } else {
-      console.log(generated);
     }
   }
 }

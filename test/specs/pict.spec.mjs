@@ -41,4 +41,24 @@ describe("PictGenerator", function () {
 
     expect(exist).to.be.true;
   });
+
+  it("does not save .json and generated text is available in prop", async function () {
+    await generator.generate("json", false);
+
+    const exists = existsSync(jsonOutputLoc);
+
+    expect(exists).to.be.false;
+    expect(generator.generated).to.be.a("string");
+    expect(generator.generated).not.have.length(0);
+  });
+
+  it("does not save as .txt and generated text is available in prop", async function () {
+    await generator.generate("text", false);
+
+    const exists = existsSync(txtOutputLoc);
+
+    expect(exists).to.be.false;
+    expect(generator.generated).to.be.a("string");
+    expect(generator.generated).not.have.length(0);
+  });
 });
