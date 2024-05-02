@@ -1,17 +1,29 @@
 {
   "name": "pwtg",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Node.js Typescript wrapper for using Microsoft PICT programmatically.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:radekBednarik/pict-ts-lib.git"
+  },
+  "homepage": "https://github.com/radekBednarik/pict-ts-lib",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "test": "npm run build && mocha",
     "build": "rimraf ./dist && tsc",
-    "lint": "tsc --noEmit --pretty && eslint ./src"
+    "lint": "tsc --noEmit --pretty && eslint ./src",
+    "publish": "npm publish --access-public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "pict",
+    "pairwise",
+    "testing",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Radek Bednarik<radek.bednarik@tesena.com>",
+  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.1.1",
     "@types/chai": "^4.3.15",

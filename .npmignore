@@ -1,0 +1,8 @@
+binaries
+node_modules
+package-lock.json
+.git
+.mocharc.cjs
+eslint.config.mjs
+tsconfig.json
+src
