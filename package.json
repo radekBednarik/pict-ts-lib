@@ -4,7 +4,7 @@
   "description": "Node.js Typescript wrapper for using Microsoft PICT programmatically.",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:radekBednarik/pict-ts-lib.git"
+    "url": "git+ssh://git@github.com/radekBednarik/pict-ts-lib.git"
   },
   "homepage": "https://github.com/radekBednarik/pict-ts-lib",
   "main": "dist/index.js",
