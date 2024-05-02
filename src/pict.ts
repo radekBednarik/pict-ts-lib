@@ -8,12 +8,15 @@ const exFile = promisify(execFile);
 const sParser = z.string();
 
 export default class PictGenerator {
-  private filepath: string;
+  private filepathModel: string;
   private pictLocation: string;
 
-  constructor(filepath: string, pictLocation: string) {
-    this.filepath = resolve(process.cwd(), sParser.parse(filepath));
-    this.pictLocation = resolve(process.cwd(), sParser.parse(pictLocation));
+  constructor(filepathModel: string, pictBinaryLocation: string) {
+    this.filepathModel = resolve(process.cwd(), sParser.parse(filepathModel));
+    this.pictLocation = resolve(
+      process.cwd(),
+      sParser.parse(pictBinaryLocation),
+    );
   }
 
   public async generate(
@@ -26,13 +29,13 @@ export default class PictGenerator {
 
     if (output == "json") {
       const { stdout } = await exFile(this.pictLocation, [
-        this.filepath,
+        this.filepathModel,
         "-f:json",
       ]);
       generated = sParser.parse(stdout);
     } else {
       const { stdout } = await exFile(this.pictLocation, [
-        this.filepath,
+        this.filepathModel,
         "-f:text",
       ]);
       generated = sParser.parse(stdout);
