@@ -14,11 +14,9 @@ export default class PictGenerator {
   public generated?: string;
 
   constructor(filepathModel: string, pictBinaryLocation: string) {
-    this.filepathModel = resolve(process.cwd(), sParser.parse(filepathModel));
-    this.pictLocation = resolve(
-      process.cwd(),
-      sParser.parse(pictBinaryLocation),
-    );
+    this.filepathModel = this._resolveToFullpath(filepathModel);
+    this.pictLocation = this._resolveToFullpath(pictBinaryLocation);
+
     this.generated = undefined;
   }
 
@@ -37,7 +35,7 @@ export default class PictGenerator {
     this.generated = sParser.parse(stdout);
 
     if (save == true && typeof saveLocation === "string") {
-      const sLoc = resolve(process.cwd(), sParser.parse(saveLocation));
+      const sLoc = this._resolveToFullpath(saveLocation);
 
       if (output == "json") {
         await writeJson(this.generated, sLoc);
@@ -48,17 +46,24 @@ export default class PictGenerator {
   }
 
   private _prepArgs(outputType: "json" | "text", seedLocation?: string) {
-    const input = [outputType, seedLocation];
+    const input = [
+      sParser.parse(outputType),
+      sParser.optional().parse(seedLocation),
+    ];
     const output = [];
 
     for (let i = 0; i < input.length; i++) {
       if (i === 0) {
         output.push(input[i] === "json" ? "-f:json" : "-f:text");
       } else if (i === 1 && typeof input[i] !== "undefined") {
-        output.push(`-e:${input[i]}`);
+        output.push(`-e:${this._resolveToFullpath(input[i]!)}`);
       }
     }
 
     return output;
+  }
+
+  private _resolveToFullpath(subpath: string) {
+    return resolve(process.cwd(), sParser.parse(subpath));
   }
 }
