@@ -1,0 +1,2 @@
+Type  Size  Format method File system Cluster size  Compression
+Primary 10  quick FAT 512 off 

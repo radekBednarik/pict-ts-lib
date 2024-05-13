@@ -58,3 +58,23 @@ await generator.generate("text", false);
 
 console.log(generator.generated);
 ```
+
+### Generate output using seed file
+
+What is seeding and when to use it - see [HERE](https://github.com/microsoft/pict/blob/main/doc/pict.md#seeding)
+
+```ts
+import PictGenerator from "pwtg";
+
+const generator = new Generator(
+  "path/to/input-model-file.txt",
+  "path/to/pict/binary",
+);
+
+await generator.generate(
+  "text",
+  true,
+  "file/path/to/output-text-file.txt",
+  "path/to/seed-text-file.txt",
+);
+```
