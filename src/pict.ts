@@ -26,20 +26,15 @@ export default class PictGenerator {
     output: "json" | "text",
     save?: boolean,
     saveLocation?: string,
+    seedLocation?: string,
   ) {
-    if (output == "json") {
-      const { stdout } = await exFile(this.pictLocation, [
-        this.filepathModel,
-        "-f:json",
-      ]);
-      this.generated = sParser.parse(stdout);
-    } else {
-      const { stdout } = await exFile(this.pictLocation, [
-        this.filepathModel,
-        "-f:text",
-      ]);
-      this.generated = sParser.parse(stdout);
-    }
+    const args = this._prepArgs(output, seedLocation);
+
+    const { stdout } = await exFile(this.pictLocation, [
+      this.filepathModel,
+      ...args,
+    ]);
+    this.generated = sParser.parse(stdout);
 
     if (save == true && typeof saveLocation === "string") {
       const sLoc = resolve(process.cwd(), sParser.parse(saveLocation));
@@ -50,5 +45,20 @@ export default class PictGenerator {
         await writeText(this.generated, sLoc);
       }
     }
+  }
+
+  private _prepArgs(outputType: "json" | "text", seedLocation?: string) {
+    const input = [outputType, seedLocation];
+    const output = [];
+
+    for (let i = 0; i < input.length; i++) {
+      if (i === 0) {
+        output.push(input[i] === "json" ? "-f:json" : "-f:text");
+      } else if (i === 1 && typeof input[i] !== "undefined") {
+        output.push(`-e:${input[i]}`);
+      }
+    }
+
+    return output;
   }
 }
