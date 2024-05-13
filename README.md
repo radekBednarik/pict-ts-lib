@@ -78,3 +78,33 @@ await generator.generate(
   "path/to/seed-text-file.txt",
 );
 ```
+
+### Generate output using different combinatorial order
+
+For pair-wise approach, the (default) value of combinatorial
+order is set to `2`.
+
+However, you can set different order, as specified [HERE](https://github.com/microsoft/pict/blob/main/doc/pict.md#usage).
+
+Simply put, the higher combinatorial order you set, the higher coverage
+of possible combinations you get.
+
+**Beware: if you set combinatorial order HIGHER then the highest number
+of parameters, you will get an error**
+
+```ts
+import PictGenerator from "pwtg";
+
+const generator = new Generator(
+  "path/to/input-model-file.txt",
+  "path/to/pict/binary",
+);
+
+await generator.generate(
+  "text",
+  true,
+  "path/to/output-text-file.txt",
+  undefined,
+  3,
+);
+```
