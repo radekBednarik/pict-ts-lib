@@ -14,6 +14,8 @@ describe("PictGenerator", function () {
   let jsonOutputLoc = "test/output.json";
   let txtOutputLoc = "test/output.txt";
 
+  let seedInputTxt = "test/test-data/seed-input.txt";
+
   beforeEach(async function () {
     await deleteOutputs([jsonOutputLoc, txtOutputLoc]);
 
@@ -59,6 +61,26 @@ describe("PictGenerator", function () {
     const exists = existsSync(txtOutputLoc);
 
     expect(exists).to.be.false;
+    expect(generator.generated).to.be.a("string");
+    expect(generator.generated).not.have.length(0);
+  });
+
+  it("save as .json with using the seed file input", async function () {
+    await generator.generate("json", true, jsonOutputLoc, seedInputTxt);
+
+    const exists = existsSync(jsonOutputLoc);
+
+    expect(exists).to.be.true;
+    expect(generator.generated).to.be.a("string");
+    expect(generator.generated).not.have.length(0);
+  });
+
+  it("save as .txt with using the seed file input", async function () {
+    await generator.generate("text", true, txtOutputLoc, seedInputTxt);
+
+    const exists = existsSync(txtOutputLoc);
+
+    expect(exists).to.be.true;
     expect(generator.generated).to.be.a("string");
     expect(generator.generated).not.have.length(0);
   });
