@@ -6,6 +6,7 @@ import { writeJson, writeText } from "./io.js";
 
 const exFile = promisify(execFile);
 const sParser = z.string();
+const nParser = z.number();
 
 export default class PictGenerator {
   private filepathModel: string;
@@ -25,8 +26,9 @@ export default class PictGenerator {
     save?: boolean,
     saveLocation?: string,
     seedLocation?: string,
+    combinationsOrder?: number,
   ) {
-    const args = this._prepArgs(output, seedLocation);
+    const args = this._prepArgs(output, seedLocation, combinationsOrder);
 
     const { stdout } = await exFile(this.pictLocation, [
       this.filepathModel,
@@ -45,10 +47,15 @@ export default class PictGenerator {
     }
   }
 
-  private _prepArgs(outputType: "json" | "text", seedLocation?: string) {
+  private _prepArgs(
+    outputType: "json" | "text",
+    seedLocation?: string,
+    combinationsOrder?: number,
+  ) {
     const input = [
       sParser.parse(outputType),
       sParser.optional().parse(seedLocation),
+      nParser.optional().parse(combinationsOrder),
     ];
     const output = [];
 
@@ -56,7 +63,9 @@ export default class PictGenerator {
       if (i === 0) {
         output.push(input[i] === "json" ? "-f:json" : "-f:text");
       } else if (i === 1 && typeof input[i] !== "undefined") {
-        output.push(`-e:${this._resolveToFullpath(input[i]!)}`);
+        output.push(`-e:${this._resolveToFullpath(seedLocation!)}`);
+      } else if (i === 2 && typeof input[i] !== "undefined") {
+        output.push(`-o:${combinationsOrder}`);
       }
     }
 
