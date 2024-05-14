@@ -10,9 +10,10 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "npm run build && mocha",
+    "test": "npm run link-for-test && npm run build && mocha",
     "build": "rimraf ./dist && tsc",
-    "lint": "tsc --noEmit --pretty && eslint ./src"
+    "lint": "tsc --noEmit --pretty && eslint ./src",
+    "link-for-test": "npm link && cd ./test/specs/ && npm link pwtg && cd ../.."
   },
   "keywords": [
     "pict",
