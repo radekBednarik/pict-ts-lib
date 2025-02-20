@@ -1,6 +1,6 @@
 {
   "name": "pwtg",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Node.js Typescript wrapper for using Microsoft PICT programmatically.",
   "repository": {
     "type": "git",
