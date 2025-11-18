@@ -34,7 +34,7 @@
     "globals": "^15.1.0",
     "mocha": "^10.4.0",
     "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.1.0",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.8.0"
   },
